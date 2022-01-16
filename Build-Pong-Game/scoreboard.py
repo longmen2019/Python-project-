@@ -14,17 +14,21 @@ class ScoreBoard(Turtle):
         self.penup()
         self.color("red")
         # self.shape("square")
-        self.goto(-30, 250)
-        self.write(f"{self.score}", False, ALIGN, FONT)
+        self.goto(-50, 250)
         self.hideturtle()
+        self.clear()
+        self.write(f"L:{self.score}| ", False, ALIGN, FONT)
+        self.score += 1
 
     def left_score(self):
         self.penup()
         self.color("white")
         # self.shape("square")
-        self.goto(30, 250)
-        self.write(f"{self.score}", False, ALIGN, FONT)
+        self.goto(50, 250)
         self.hideturtle()
+        self.clear()
+        self.write(f"R:{self.score}", False, ALIGN, FONT)
+        self.score += 1
 
     def increase_score(self):
         self.score += 1

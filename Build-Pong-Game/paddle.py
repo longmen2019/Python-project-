@@ -10,16 +10,16 @@ class Paddle(Turtle):
 
         self.color(random.choice(COLOR))
         self.shape("square")
-        self.shapesize(stretch_wid=8, stretch_len=1)
+        self.shapesize(stretch_wid=5, stretch_len=1)
         self.penup()
         self.speed(0)  # Get the paddle to the exact goto location
 
     def right_paddle(self):
         # self.speed(0)
-        self.goto(370, 0)
+        self.goto(350, 0)
 
     def left_paddle(self):
-        self.goto(-370, 0)
+        self.goto(-350, 0)
 
     # move paddle
     def paddle_up(self):
