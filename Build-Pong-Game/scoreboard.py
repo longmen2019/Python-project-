@@ -25,3 +25,6 @@ class ScoreBoard(Turtle):
         self.goto(30, 250)
         self.write(f"{self.score}", False, ALIGN, FONT)
         self.hideturtle()
+
+    def increase_score(self):
+        self.score += 1
